@@ -84,7 +84,6 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -113,11 +112,13 @@
                   <h5 class="modal-title">Confirmar reservacion</h5>
                 </div>
                 <div class="modal-body">
-                    <p>¿Confirma su reservacion?</p>
+                    <?php
+                        include("comprar.php");
+                    ?>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-secondary" id="btnCancelar">No</button>
-                  <button class="btn btn-primary" id="btnAceptar">Si</button>    
+                  <button class="btn btn-secondary" id="btnCancelar">Cancelar</button>
+                  <button class="btn btn-primary" id="btnAceptar">Aceptar</button>    
                 </div>
             </div>
         </div>
