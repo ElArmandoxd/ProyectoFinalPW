@@ -5,9 +5,12 @@
             Tipo de paquete
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" name = "">Basico</a>
-            <a class="dropdown-item" name = "">Medio</a>
-            <a class="dropdown-item" name = "">Premium</a>
+            <a class="dropdown-item" name = "basico">Basico</a>
+            <a class="dropdown-item" name = "medio">Medio</a>
+            <a class="dropdown-item" name = "premium">Premium</a>
         </div>
     </div>
+    <?php
+        include("backendCompra.php");
+    ?>
 </form>

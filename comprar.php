@@ -2,8 +2,8 @@
 session_start();
 
 include("conexion.php");
-include("indexComprar.php")
-/*if($_POST["paquete1"] > 0){
+
+if($_POST["paquete1"] > 0){
     $idUsuario = $_SESSION["datosUsuario"]["id"];
     $lugares = $_POST["paquete1"];
 
@@ -80,5 +80,4 @@ echo "<p>".$_POST["paquete3"]."</p>";
 
 echo "<p>Usuario que hizo la operacion</p>";
 echo "<p>".$_SESSION["datosUsuario"]["id"]."</p>";
-*/
 ?>

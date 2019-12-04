@@ -28,5 +28,6 @@
         echo '<script>
         alert("Hubo un problema al iniciar sesión");
        </script>';
+       header("location: index.php");
     }
 ?>
