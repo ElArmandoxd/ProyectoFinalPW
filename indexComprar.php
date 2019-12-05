@@ -1,4 +1,4 @@
-<form action = "backendCompra.php" method="POST">
+<form>
     <h2>¿Qué paquete es este asiento?</h2>
     <div class="dropdown">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -10,7 +10,4 @@
             <a class="dropdown-item" name = "premium">Premium</a>
         </div>
     </div>
-    <?php
-        include("backendCompra.php");
-    ?>
 </form>

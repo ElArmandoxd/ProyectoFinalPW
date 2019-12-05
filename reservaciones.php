@@ -120,7 +120,8 @@
                     ?>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-primary" id="btnAceptar">Aceptar</button>    
+                  <button class="btn btn-primary" id="btnAceptar">Aceptar</button>  
+                  <button class="btn btn-secondary" id="btnCancelar">Cancelar</button>   
                 </div>
             </div>
         </div>
