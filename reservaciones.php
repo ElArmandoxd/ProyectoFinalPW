@@ -25,7 +25,7 @@
         margin: 100px;
         }
         .silla-reservada{
-        color:red;
+        color:red !important;
         }
         .contenedor-mesa{
             margin:5px;
@@ -114,15 +114,10 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                    <?php
-                        include("indexComprar.php");
-                    ?>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn btn-primary" id="btnAceptar">Aceptar</button>  
-                  <button class="btn btn-secondary" id="btnCancelar">Cancelar</button>   
-                </div>
+                
+                <?php
+                    include("indexComprar.php");
+                ?>
             </div>
         </div>
     </div>
@@ -142,14 +137,14 @@
     </aside>
     <script>
         var idSilla=0;
-        $("#btnAceptar").on("click", function(){
+       /*  $("#btnAceptar").on("click", function(){
             $(this).prop("disabled",true);
             var lugaresPaquete1 = $("#paquete1").val();
             var lugaresPaquete2 = $("#paquete2").val();
             var lugaresPaquete3 = $("#paquete3").val();
             
             $.ajax({
-                url: "comprar.php",
+                url: "confirmarReservacion.php",
                 method: "POST",
                 data: {
                     paquete1: lugaresPaquete1,
@@ -161,7 +156,7 @@
                 $(this).prop("disabled",false);
                 $("#modalConfirmar").modal("hide");
             });
-        });
+        }); */
         $.ajax({
             url: "indicadores.php",
             method: "GET",
@@ -191,15 +186,21 @@
             $("#btnCancelar").on("click",function(){
                 $("#ventanaConfirmacion").modal("hide");
             });
+           
+            $( "#selectPackage" ).change(function() {
+                idPaquete = this.value;
+            });
             $("#btnAceptar").on("click",function(){
                 $.ajax({
-                    url:"confirmarReservacion.php",
                     method:"POST",
+                    url:"confirmarReservacion.php",
                     data:{
-                        silla:idSilla
+                        paquete: idPaquete,
+                        silla: idSilla
                     }
                     })
-                    .done(function(){
+                    .done(function(response){
+                        console.log(response);
                         $("#ventanaConfirmacion").modal("hide");
                 });
             });

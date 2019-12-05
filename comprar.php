@@ -3,7 +3,10 @@ session_start();
 
 include("conexion.php");
 
-if($_POST["paquete1"] > 0){
+$data = $_POST['data'];
+json_decode($data);
+echo $data->paquete;
+/* if($_POST["paquete1"] > 0){
     $idUsuario = $_SESSION["datosUsuario"]["id"];
     $lugares = $_POST["paquete1"];
 
@@ -70,7 +73,7 @@ if($_POST["paquete3"] > 0){
     
     $resultado = $conexionDB->query($statement);
     echo "resultado de insertar paquete3: ".$resultado;
-}
+} */
 
 echo "<p>Lugares Comprados: </p>";
 
