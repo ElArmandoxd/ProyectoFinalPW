@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Reservaciones</title>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="files/jquery.min.js"></script>
+    <script src="files/popper.js"></script>
+    <script src="files/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/all.min.css"/>
     <link rel="stylesheet" href="css/main.css">
     <style>

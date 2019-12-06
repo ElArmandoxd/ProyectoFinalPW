@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <title>VIP</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="files/jquery.min.js"></script>
+    <script src="files/bootstrap.min.js"></script>
     <script>
     $(function(){
         $paquetes = $("#paquete1, #paquete2, #paquete3");

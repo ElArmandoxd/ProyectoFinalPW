@@ -1,3 +1,3 @@
 <?php
-    $conexionDB = new mysqli("localhost", "root", "Universo74", "graduacion4b");
+    $conexionDB = new mysqli("localhost	", "id11837060_armando", "????????????", "id11837060_graduacion");
 ?>
